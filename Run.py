@@ -140,6 +140,9 @@ warna_warni_biasa=random.choice([H,K,M,O,B,U])
 garis = f" {P}[{warna_warni_biasa}•{P}]"
 
 ###---[ APPEND ]---###
+liu = []
+usragent = []
+uaku = []
 dump, sandi, metode = [], [], []
 tetel, opsi, proxy = [], [], []
 cepeh, sam, ugen2, ugen, redmi = [], [], [], [], []

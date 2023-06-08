@@ -102,10 +102,6 @@ def tahunng(fx):
 ###---[ANGGAP INI LOGO ]---###
 def logo(n):
 	return str(f"""
-       {M}   ____   _____  _____  _____
-       {N}  |    \ |  _  || __  ||  |  |
-       {U}  |  |  ||     ||    -||    -|
-       {K}  |____/ |__|__||__|__||__|__|
      {M}•{K}•{H}• {P}Multi Brute Force Facebook By [ Rochmat Basuki ] {M}•{K}•{H}•
      {M}•{K}•{H}• {P}Author   : Rochmat Basuki [ RozhBasXYZ ] {H}•{K}•{M}•          
      {M}•{K}•{H}• {P}Github   : github.com/Itsmeafriliyan {H}•{K}•{M}•   
@@ -113,10 +109,6 @@ def logo(n):
      
 def logo2():
 	return str(f"""
-       {M}   ____   _____  _____  _____
-       {N}  |    \ |  _  || __  ||  |  |
-       {U}  |  |  ||     ||    -||    -|
-       {K}  |____/ |__|__||__|__||__|__|
 {M}>{K}>{H}> {P}CHECKING FOR LOGIN {H}>{K}>{M}>""")
 
 ###---[ TANGGAL ]---###

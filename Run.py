@@ -167,6 +167,16 @@ try:
 	print(f'\r\n [!] Sedang Dump Proxy Dan Create Useragent')
 	try:os.remove('.proxy.txt')
 	except:pass
+	A = ''
+	one = ses.get('https://spys.me/socks.txt').text
+	for x in one.splitlines():
+		if '+' in x:
+			if '.' in x:
+				p = x.split(' ')[0]
+				A += '\n'+p
+	uno = ses.get("https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all").text
+	open('.proxy.txt','w').write(uno)
+except requests.exceptions.ConnectionError:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
 	open('.prox.txt','w').write(prox)
 except Exception as e:
